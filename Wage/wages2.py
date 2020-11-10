@@ -5,7 +5,7 @@ x = PrettyTable()
 dic = my_dictionary()
 x.field_names = ["Name", "Money"]
 rate = int(input("Enter rate per hour: "))
-path = "Files/wages.txt"
+path = "../Files/wages.txt"
 file = open(path)
 for line in file:
     lin = line.rstrip()

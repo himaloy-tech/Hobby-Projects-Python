@@ -55,9 +55,11 @@ def check_winner():
         winner = "O"
     return winner
 
+
 def check_draw():
     global draw
-    if li[0] != '_' and li[1] != '_' and li[2] != '_' and li[3] != '_' and li[4] != '_'and li[5] != '_'and li[6] != '_' and li[7] != '_'and li[8] != '_' and winner is None:
+    if li[0] != '_' and li[1] != '_' and li[2] != '_' and li[3] != '_' and li[4] != '_' and li[5] != '_' and li[
+        6] != '_' and li[7] != '_' and li[8] != '_' and winner is None:
         draw = True
     return draw
 
@@ -97,5 +99,6 @@ def game():
             board()
         if draw:
             print(f"It's a draw")
+
 
 game()

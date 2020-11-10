@@ -35,7 +35,7 @@ class Employee:
 
 
 def start(rate):
-    file = open("Files/wages.txt")
+    file = open("../Files/wages.txt")
     for line in file:
         lin = line.rstrip()
         slp = lin.split()
@@ -47,5 +47,6 @@ def start(rate):
         'Pay': li2
     }
     createfile('Payment', pd.DataFrame(d))
+
 
 start(rate)
