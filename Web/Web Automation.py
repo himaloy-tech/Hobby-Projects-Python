@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-chrome = webdriver.Chrome('chromedriver.exe')
+chrome = webdriver.Chrome('D:\Documents\All Git Repository\Hobby-Projects-Python\Web\chromedriver.exe') # Path of the chromedriver
 chrome.get('https://docs.google.com/forms/d/e/1FAIpQLSegHw2JICSGQ97PKKn7oM5pL3777EXczKdHwgjIBxU7y8wQCA/viewform?usp=sf_link')  # url
 time.sleep(3)
 
@@ -22,3 +22,6 @@ field.click()
 
 field = chrome.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div/span')
 field.click()
+
+time.sleep(8)
+exit()
